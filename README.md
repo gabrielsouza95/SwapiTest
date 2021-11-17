@@ -7,5 +7,8 @@ Foi utilizado o <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.htm
 Depois de instalado, basta executar o programa utilizando o nome do arquivo para ter como retorno os valores básicos da API. Pode também ser passado o valor do recurso desejado e o Id também.
 Exemplo: 'python SwapiConnection.py' ou 'python SwapiConnection.py planets' ou 'python SwapiConnection.py planets 1'.
 
+Também é possível obter o resultado traduzido para Wookiee, para isso precisa passar o recurso e Id do objeto desejado e mais 'wookiee'.
+Exemplo: 'python SwapiConnection.py planets 1 wookiee'.
+
 Obs 1: Para saber os recursos disponíveis e mais informações sobre a API, acesse <a href = "https://swapi.dev/documentation">esse link</a>.
 Obs 2: Passar somente valores inteiros positivos como Id para o programa.
