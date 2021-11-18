@@ -45,7 +45,6 @@ class SwapiConection:
                 self.page += 1
             else :
                 self.has_next = False
-            print(f"quantidade de {p_resource} {len(self.result_dict['results'])}")
             for item in self.result_dict['results']:
                 self.single_item = item
                 if len(item[f'{p_item_type}']) >= p_min_amount:
