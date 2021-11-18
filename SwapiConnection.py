@@ -34,8 +34,9 @@ class SwapiConection:
 
     def count_items(self, p_conection, p_resource, p_item_type, p_min_amount): 
         self.single_item = {}
-        self.has_next = True
-        self.page = 1
+        self.result_items = []
+        self.has_next = True #pressupoe que pelo menos a primeira página existe
+        self.page = 1 #inicia na primeira página
         while self.has_next:
             result = p_conection.get_request(f'{p_resource}', p_page=self.page)
             self.result_dict = self.json.loads(result)
@@ -49,7 +50,12 @@ class SwapiConection:
                 self.single_item = item
                 if len(item[f'{p_item_type}']) >= p_min_amount:
                     print(len(item[f'{p_item_type}']))
-
+                    self.result_items.append(item['name']) #grava o nome de cada item que corresponde ao solicitado
+        print(self.result_items)
+        self.items_dict = {'name' : self.result_items}
+        print(self.items_dict)
+        with open( f'result_{p_resource}.json', 'w' ) as result_file:
+            self.json.dump(self.items_dict, result_file) 
 
 def main():
     import sys
