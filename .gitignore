@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+result_planets
+result_people
+result_planets.json
+result_people.json
