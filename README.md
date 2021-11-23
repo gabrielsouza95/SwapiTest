@@ -4,9 +4,11 @@
 <h2>Como rodar o programa</h2>
 <p>Foi utilizado o <a href="https://pipenv-fork.readthedocs.io/en/latest/basics.html#example-pipfile-pipfile-lock">pipenv</a>, então basta clonar o repositório e executar pipenv install estando no diretório do projeto.</p>
 
-<p>Depois de instalado, basta executar o programa utilizando o nome do arquivo para ter como retorno os valores básicos da API. Pode também ser passado o valor do recurso desejado e o Id também.</p>
-<p>Exemplo: 'python SwapiConnection.py' ou 'python SwapiConnection.py planets' ou 'python SwapiConnection.py planets 1'.</p>
-<p>Imagem a seguir mostra o retorno de uma execução simples do programa sem parâmetros.</p>
+<p>Depois de instalado, basta executar o programa utilizando o nome do arquivo para ter como retorno os nomes dos personagens que estão em 4 ou mais filmes num arquivo 'result_people.json' e os nomes dos planetas que possuem 5 ou mais <i>residents</i> num arquivo 'result_planets.json'.</p>
+<p>Exemplo: 'python SwapiConnection.py'</p>
+<p>Pode também ser passado o valor do recurso desejado e o Id também.</p>
+<p>Exemplo: 'python SwapiConnection.py planets' ou 'python SwapiConnection.py planets 1'.</p>
+<p>Imagem a seguir mostra o retorno de uma execução do programa com o comando 'python SwapiConnection.py planets 1'.</p>
 <span><img style="max-width:50%; max-height:50%;" src="https://github.com/gabrielsouza95/SwapiTest/blob/main/teste_simples.PNG" alt="imagem_teste_programa">
 </span>
 
