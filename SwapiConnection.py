@@ -1,4 +1,3 @@
-# Esse códiogo visa responder a questão 3
 # Gabriel de Souza Alves
 
 class SwapiConection:
